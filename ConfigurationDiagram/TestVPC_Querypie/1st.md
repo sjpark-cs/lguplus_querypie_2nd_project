@@ -18,7 +18,7 @@
 | 리소스 이름      | 설명 |
 |------------------|------|
 | querypie-dev-2a    | m5.large, Amazon Linux 2023 |
-| querypie-dev-proxy-sg  | 보안 그룹 (인바운드 포트 22, 80, 9000, 9022(RTA), source: 0.0.0.0/0), (아웃바운드 포트 all, destination: 0.0.0.0/0) |
+| querypie-dev-proxy-sg  | 인바운드 포트 22, 80, 9000, 9022(RTA), source: 0.0.0.0/0<br>아웃바운드 포트 all, destination: 0.0.0.0/0|
 
 
 
@@ -27,7 +27,7 @@
 | NLB 종류       | 리스너(타겟그룹)                          |
 |-------------------|-------------------------------|
 | querypie-dev-rta-nlb(RTA) | tcp/9022(tg:querypie-dev-9022-9022) |
-| querypie-dev-nlb(접속용) | tcp/80(tg:querypie-dev-443-80), tls/443(tg:querypie-dev-443-80 / TLS 인증서), tcp/9000(tg:querypie-dev-9000-9000) |
+| querypie-dev-nlb(접속용) | tcp/80(tg:querypie-dev-443-80), tls/443(tg:querypie-dev-443-80 / TLS 인증서)<br>tcp/9000(tg:querypie-dev-9000-9000) |
 
 | 보안 그룹 이름         | 인바운드        | 아웃바운드 |
 |------------------------|----------------------|------------|
