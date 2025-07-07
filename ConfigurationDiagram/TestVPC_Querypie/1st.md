@@ -2,7 +2,7 @@
 # AWS VPC 구성 리소스 요약 (QueryPie 환경)
 
 이 문서는 제공된 아키텍처 다이어그램 기반으로 AWS VPC 내 리소스들을 카테고리별로 정리한 표입니다.
-![EC2 구성도](./Test망 리소스.png)
+![EC2 구성도](image/TEST_Querypie_Resource.png)
 
 
 ## 📦 VPC 및 서브넷
